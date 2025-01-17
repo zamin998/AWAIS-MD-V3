@@ -15,29 +15,32 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ Owner : *${config.BOT_NAME}*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Platform : *Heroku*
-┃★│ Mode : *[${config.MODE}]*
-┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *v 2.0.0*
+┃★│ 𝑶𝑾𝑵𝑬𝑹 : *${config.BOT_NAME}*
+┃★│ 𝑩𝑨𝑰𝑳𝑬𝒀𝑺 : *Multi Device*
+┃★│ 𝑻𝒀𝑷𝑬 : *NodeJs*
+┃★│ 𝑷𝑳𝑨𝑻𝑭𝑶𝑹𝑴 : *Heroku*
+┃★│ 𝑴𝑶𝑫𝑬 : *[${config.MODE}]*
+┃★│ 𝑷𝑹𝑰𝑭𝑰𝑿 : *[${config.PREFIX}]*
+┃★│ 𝑽𝑬𝑹𝑺𝑰𝑶𝑵 : *v 2.0.0*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *Menu List* 〕━━┈⊷
+╭━━〔 *𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• aimenu
-┃◈┃• anmiemenu
-┃◈┃• convertmenu
-┃◈┃• funmenu
-┃◈┃• dlmenu
-┃◈┃• listcmd
-┃◈┃• mainmenu
-┃◈┃• groupmenu
-┃◈┃• allmenu
-┃◈┃• ownermenu
-┃◈┃• othermenu
-┃◈┃• repo
+┃◈┃• .ᴀɪᴍᴇɴᴜ
+┃◈┃• .ᴀɴɪᴍɪᴇᴍᴇɴᴜ
+┃◈┃• .ᴄᴏɴᴠᴇʀᴛᴍᴇɴᴜ
+┃◈┃• .ꜰᴜɴᴍᴇɴᴜ
+┃◈┃• .ᴅʟᴍᴇɴᴜ
+┃◈┃• .ʟɪꜱᴛᴄᴍᴅ
+┃◈┃• .ᴍᴇɪɴᴍᴇɴᴜ
+┃◈┃• .ᴀʟʟᴍᴇɴᴜ
+┃◈┃• .ɢʀᴏᴜᴘᴍᴇɴᴜ
+┃◈┃• .ᴏᴡɴᴇʀᴍᴇɴᴜ
+┃◈┃• .ᴏᴛʜᴇʀᴍᴇɴᴜ
+┃◈┃• .ʀᴇᴘᴏ
+┃◈┃• .ʟᴏɢᴏ<ᴛᴇxᴛ>
+┃◈┃• .ʙᴜɢᴍᴇɴᴜ
+┃◈┃• .ᴀɴᴛɪᴅᴇʟ <ꜰᴏʀ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴍᴇꜱᴇɢᴇ>
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > ${config.CAPTION}`;
