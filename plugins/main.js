@@ -194,7 +194,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://qu.ax/QkpAj.jpg` },
+                image: { url: `https://i.imgur.com/XM8Vadf.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
@@ -212,7 +212,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' },
+            audio: { url: 'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250118-WA0022.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
