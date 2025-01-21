@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+//const fetch = require("node-fetch");
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson} = require('../lib/functions')
 const { cmd } = require("../command");
 
@@ -24,7 +24,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
         }
 
         // Fetch pairing code
-        const fetch = require("node-fetch");
+        //const fetch = require("node-fetch");
         const response = await fetch(`https://awais-md-pair.onrender.com/code?number=${q}`);
         const pair = await response.json();
 
