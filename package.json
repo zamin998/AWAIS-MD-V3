@@ -23,7 +23,7 @@
     "@sl-code-lords/si-subdl": "latest",
     "@stablelib/x25519-session": "2.0.0",
     "@types/android-versions": "1.8.3",
-    "@whiskeysockets/baileys": "github:DannOfficial/Baileys",
+    "@whiskeysockets/baileys": "latest",
     "acrcloud": "^1.4.0",
     "android-versions": "2.0.0",
     "api-dylux": "1.8.5",
