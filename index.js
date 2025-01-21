@@ -42,7 +42,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['923470027813']
+  const ownerNumber = ['923182832887']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -190,7 +190,7 @@ const {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const ikratos = ('923470027813', '923191089077');
+    const ikratos = ('923182832887', '923182832887');
     let isCreator = [udp, ikratos, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -237,17 +237,17 @@ const {
 				}
  //================ownerreact==============
     
- if(senderNumber.includes("923470027813")){
+ if(senderNumber.includes("923182832887")){
   if(isReact) return
   m.react("👑")
   }
   
-  if(senderNumber.includes("923470027813")){
+  if(senderNumber.includes("923182832887")){
   if(isReact) return
   m.react("👑")
   }
   
-  if(senderNumber.includes("923470027813")){
+  if(senderNumber.includes("923182832887")){
   if(isReact) return
   m.react("🦋")
    }
