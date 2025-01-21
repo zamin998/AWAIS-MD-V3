@@ -121,7 +121,7 @@ const {
 
   conn.ev.on('messages.update', async updates => {
     for (const update of updates) {
-      if (update.update.messageStubType === 1 || update.update.message === null) {
+      if (update.update.message === null) {
         console.log("Delete Detected:", JSON.stringify(update, null, 2));
         await AntiDelete(conn, updates);
       }
@@ -137,7 +137,7 @@ const {
     mek.message = (getContentType(mek.message) === 'ephemeralMessage') 
     ? mek.message.ephemeralMessage.message 
     : mek.message;
-    console.log("New Message Detected:", JSON.stringify(mek, null, 2));
+    //console.log("New Message Detected:", JSON.stringify(mek, null, 2));
   if (config.READ_MESSAGE === 'true') {
     await conn.readMessages([mek.key]);  // Mark message as read
     console.log(`Marked message from ${mek.key.remoteJid} as read.`);
@@ -167,6 +167,7 @@ const {
   const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
   const body = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : ''
   const isCmd = body.startsWith(prefix)
+  var budy = typeof mek.text == 'string' ? mek.text : false;
   const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : ''
   const args = body.trim().split(/ +/).slice(1)
   const q = args.join(' ')
@@ -773,4 +774,3 @@ const {
   setTimeout(() => {
   connectToWA()
   }, 4000);
-  
