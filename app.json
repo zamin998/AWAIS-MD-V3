@@ -151,6 +151,5 @@
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
-     ],
-  "stack": "heroku-24"
+     ]
 }
