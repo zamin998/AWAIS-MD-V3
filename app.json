@@ -142,6 +142,36 @@
       "description": "enter your caption if you want to show on status reply.",
       "required": true,
       "value": "𝒚𝒐𝒖𝒓 𝒔𝒕𝒂𝒕𝒖𝒔 𝒔𝒆𝒆𝒏 𝒋𝒖𝒔𝒕 𝒏𝒐𝒘 𝒃𝒚 𝒂𝒘𝒂𝒊𝒔 𝒎𝒅"
+    },    
+
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "set customs emojis that bot will react.",
+      "required": true,
+      "value": "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍"
+    },
+    
+    "CUSTOM_REACT": {
+      "description": "customs reaction emojis that bot will react.",
+      "required": true,
+      "value": "false"
+    },
+
+    "AUTHOR": {
+      "description": "stickerpack author name",
+      "required": true,
+      "value": "xIKRATOSx"
+    },
+
+    "PACKNAME": {
+      "description": "stickerpack pack name",
+      "required": true,
+      "value": "created by"
+    },
+
+    "ANTI_DEL_PATH": {
+      "description": "set 'same' if you want anti deleted message on same chat where it was deleted.",
+      "required": true,
+      "value": "log"
     }
 
 
