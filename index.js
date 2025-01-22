@@ -7,6 +7,7 @@ const {
     proto,
     generateWAMessageContent,
     generateWAMessage,
+    isJidBroadcast,
     AnyMessageContent,
     prepareWAMessageMedia,
     areJidsSameUser,
