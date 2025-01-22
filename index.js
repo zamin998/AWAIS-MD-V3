@@ -112,8 +112,8 @@ const {
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*YOUR BOT ACTIVE NOW ENJOY♥️*\n\n*PREFIX:* ${prefix}`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://i.imgur.com/ruBrlLo.jpeg` }, caption: up })
+  let up = `*YOUR BOT AWAIS MD ACTIVE NOW ENJOY♥️*\n\n*PREFIX:* ${prefix}`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://i.imgur.com/XM8Vadf.jpeg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
