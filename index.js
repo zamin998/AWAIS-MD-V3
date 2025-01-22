@@ -3,6 +3,7 @@ const {
     useMultiFileAuthState,
     DisconnectReason,
     jidNormalizedUser,
+    isJidBroadcast,
     getContentType,
     proto,
     generateWAMessageContent,
