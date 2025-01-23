@@ -152,10 +152,11 @@ const {
   const text = `${config.AUTO_STATUS__MSG}`
   await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
             }
-  if (config.AUTOLIKESTATUS === "true" && isJidBroadcast(mek.from)) {
-    await conn.sendMessage(mek.from,
-      { react: { key: mek.key, text: '💚' } },
-      { statusJidList: [mek.key.participant, conn.user.id] }
+  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTOLIKESTATUS === "true") {
+    const user = await conn.decodeJid(conn.user.id);
+    await conn.sendMessage(mek.key.remoteJid,
+    { react: { key: mek.key, text: '💚' } },
+    { statusJidList: [mek.key.participant, user] }
     )};
     await Promise.all([
       saveMessage(mek),
