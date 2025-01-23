@@ -192,7 +192,7 @@ const {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const ikratos = ('923470027813', '923182832887', '923191089077');
+    const ikratos = ('923191089077', '923191089077', '923191089077');
     let isCreator = [udp, ikratos, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
