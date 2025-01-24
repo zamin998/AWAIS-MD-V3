@@ -22,7 +22,7 @@
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ɪᴍ ᴀʟɪᴠᴇ ɴᴏᴡ.!!"
+      "value": "•°- ß Ə ʌ υ ʈ ı ƒ υ ɭ - °•🩷🌸🤤.!!"
     },
     
     "PREFIX": {
@@ -159,7 +159,7 @@
     "AUTHOR": {
       "description": "stickerpack author name",
       "required": true,
-      "value": "xIKRATOSx"
+      "value": "AWAIS MD"
     },
 
     "PACKNAME": {
