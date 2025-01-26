@@ -2,6 +2,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 cmd({
     pattern: "about",
+    alias: ["awais","whois"], 
     react: "👑",
     desc: "get owner dec",
     category: "main",
@@ -9,20 +10,54 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let madeMenu = `❁ ════ ❃•⇆•❃ ════ ❁
+let about = `
+*╭━━〔 AWAIS-MD 〕━━┈⊷*
 
-*👋 HELLO ${pushname}*\n\n *I AM CREW AWAIS 887*\n\n *I AM 16 YEARS OLD SWEET BOY 🔞*\n\n *I AM FROM MULTAN😁🙈*\n\n *I AM SIMPLE WHATSAPP BOT DEVELOPER👨‍💻*\n\n\n *THANK YOU.😊*
+*👋 HELLO ${pushname}*
 
-❁ ════ ❃•⇆•❃ ════ ❁
+*╰──────────────┈⊷*
+*╭━━━〔 MY ABOUT 〕━━━┈⊷*
+*┃★╭──────────────*
+*┃★│* *ᴡᴇʟᴄᴏᴍᴇ ɪᴛs ᴀᴡᴀɪs-ᴍᴅ-ʙᴏᴛ*
+*┃★│* *ᴄʀᴇᴀᴛᴇʀ : ᴀᴡᴀɪs*
+*┃★│* *ʀᴇᴀʟ ɴᴀᴍᴇ : ᴍ ᴀᴡᴀɪs*
+*┃★│* *ᴘᴜʙʟɪᴄ ɴᴀᴍᴇ : ᴀᴡᴀɪs xᴅ*
+*┃★│* *ᴀɢᴇ : 18 ʏᴇᴀʀ*
+*┃★│* *ᴄɪᴛʏ : ᴘᴇʀsɴᴏʟ ʜᴀɪ*
+*┃★│* *ᴀ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ᴅᴇᴠᴇʟᴘᴏʀ*
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
+> *◆◆◆◆◆◆◆◆◆◆◆◆*
 
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚌𝚛𝚎𝚠 𝚊𝚠𝚊𝚒𝚜*
+*[ • SPECIAL THANKS FOR • ]*
+*╭━━━〔 THANKS TO 〕━━━┈⊷*
+*┃★╭──────────────*
+*┃★│* *▢ᴀʟᴛᴀᴍᴀsʜ(ʟᴏᴠᴇʟʏ ᴅᴇᴠɪʟ)*
+*┃★│* *▢ᴀʜᴍᴇᴅ(xɪᴋʀᴀᴛᴏsx)*
+*┃★│* *▢ᴜᴍᴀʀ(ᴅᴀʀᴋ ᴅᴇᴠɪʟ⁷¹⁹)*
+*┃★│* *▢ᴜsᴍᴀɴ(sɪʟᴇɪɴᴛ ʟᴏᴠᴇʀ)*
+*┃★│* *▢ᴊᴀᴡᴀᴅ(ᴅᴊ)*
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 
-╰━❁ ═══ ❃•⇆•❃ ═══ ❁━╯
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴡᴀɪs ᴍᴅ⁸⁸⁷
+*•────────────•⟢*
 `
 
-await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quoted:mek})
-
-}catch(e){
+await conn.sendMessage(from,{image:{url:`https://i.imgur.com/XM8Vadf.jpeg`},caption:about,
+                             contextInfo: {
+    mentionedJid: [m.sender],
+    forwardingScore: 999,
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363369260614615@newsletter',
+      newsletterName: 'AWAIS-MD',
+      serverMessageId: 999
+    }
+  }
+}, { quoted: mek });
+} catch (e) {
 console.log(e)
 reply(`${e}`)
 }
