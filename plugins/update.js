@@ -1,45 +1,99 @@
-const config = require('../config');
-let fs = require('fs');
-const { exec } = require('child_process');
-const { cmd } = require('../command');
+// JawadTechX Don't Change Credits 💸
 
-cmd({
-    pattern: "update",
-    react: "🔄",
-    desc: "Update folder from GitHub",
-    category: "system",
-    use: '.update',
-    filename: __filename
-}, async (conn, mek, m, { from, reply }) => {
-    try {
-        const repoUrl = 'https://github.com/Awais-star-a11y/AWAIS-MD.git'; // لینک مخزن گیت‌هاب
-        const targetFolder = 'plugins'; // پوشه‌ای که باید به‌روز شود
+const { cmd } = require("../command");  
+const axios = require('axios');  
+const fs = require('fs');  
+const path = require("path");  
+const AdmZip = require("adm-zip");  
 
-        // بررسی وجود پوشه هدف
-        if (!fs.existsSync(targetFolder)) {
-            fs.mkdirSync(targetFolder); // ساخت پوشه در صورت عدم وجود
-        }
+cmd({  
+  pattern: "update",  
+  alias: ["upgrade", "sync"],  
+  react: '🆕',  
+  desc: "Update the bot to the latest version.",  
+  category: "misc",  
+  filename: __filename  
+}, async (client, message, args, { from, reply, sender, isOwner }) => {  
+  if (!isOwner) {  
+    return reply("This command is only for the bot owner.");  
+  }  
 
-        // تعیین دستور مناسب گیت
-        const gitCommand = fs.existsSync(`${targetFolder}/.git`)
-            ? `git -C ${targetFolder} pull`
-            : `git clone ${repoUrl} ${targetFolder}`;
+  try {  
+    await reply("```🔍 Checking for AWAIS-MD-V3 updates...```\n");  
+      
+    // Get latest commit from GitHub  
+    const { data: commitData } = await axios.get("https://api.github.com/repos/Awais-star-a11y/AWAIS-MD-V3/commits/main");  
+    const latestCommitHash = commitData.sha;  
 
-        // اجرای دستور گیت
-        await new Promise((resolve, reject) => {
-            exec(gitCommand, (err, stdout, stderr) => {
-                if (err) {
-                    reject(`Git command failed: ${stderr}`);
-                } else {
-                    resolve(stdout);
-                }
-            });
-        });
+    // Get current commit hash  
+    let currentHash = 'unknown';  
+    try {  
+      const packageJson = require('../package.json');  
+      currentHash = packageJson.commitHash || 'unknown';  
+    } catch (error) {  
+      console.error("Error reading package.json:", error);  
+    }  
 
-        // ارسال پیام موفقیت
-        await conn.sendMessage(from, { text: '*✅ Update completed successfully!*' }, { quoted: mek });
-    } catch (error) {
-        console.error(error);
-        reply(`*Error during update:* ${error.message}`);
-    }
-});
+    if (latestCommitHash === currentHash) {  
+      return reply("```✅ Your AWAIS-MD-V3 bot is already up-to-date!```\n");  
+    }  
+
+    await reply("```AWAIS-MD-V3 Bot Updating...🚀```\n");  
+      
+    // Download latest code  
+    const zipPath = path.join(__dirname, "latest.zip");  
+    const { data: zipData } = await axios.get("https://github.com/Awais-star-a11y/AWAIS-MD-V3/archive/main.zip", { responseType: "arraybuffer" });  
+    fs.writeFileSync(zipPath, zipData);  
+
+    await reply("```📦 Extracting the latest code...```\n");  
+      
+    // Extract ZIP file  
+    const extractPath = path.join(__dirname, 'latest');  
+    const zip = new AdmZip(zipPath);  
+    zip.extractAllTo(extractPath, true);  
+
+    await reply("```🔄 Replacing files...```\n");  
+      
+    // Copy updated files, skipping config.js and app.json  
+    const sourcePath = path.join(extractPath, "AWAIS-MD-V3-main");  
+    const destinationPath = path.join(__dirname, '..');  
+    copyFolderSync(sourcePath, destinationPath);  
+
+    // Cleanup  
+    fs.unlinkSync(zipPath);  
+    fs.rmSync(extractPath, { recursive: true, force: true });  
+
+    await reply("```🔄 Restarting the bot to apply updates...```\n");  
+    process.exit(0);  
+  } catch (error) {  
+    console.error("Update error:", error);  
+    reply("❌ Update failed. Please try manually.");  
+  }  
+});  
+
+// Helper function to copy directories while preserving config.js and app.json  
+function copyFolderSync(source, target) {  
+  if (!fs.existsSync(target)) {  
+    fs.mkdirSync(target, { recursive: true });  
+  }  
+
+  const items = fs.readdirSync(source);  
+  for (const item of items) {  
+    const srcPath = path.join(source, item);  
+    const destPath = path.join(target, item);  
+
+    // Skip config.js and app.json  
+    if (item === "config.js" || item === "app.json") {  
+      console.log(`Skipping ${item} to preserve custom settings.`);  
+      continue;  
+    }  
+
+    if (fs.lstatSync(srcPath).isDirectory()) {  
+      copyFolderSync(srcPath, destPath);  
+    } else {  
+      fs.copyFileSync(srcPath, destPath);  
+    }  
+  }  
+}
+
+// JAWAD TECH X 
