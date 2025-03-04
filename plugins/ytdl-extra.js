@@ -59,7 +59,7 @@ cmd({
       + `📌 *Reply with the number to download in your choice.*`;
 
     const sentMsg = await conn.sendMessage(from, {
-      image: { url: ytData.thumbnail || "YAHA LINK LAGA" },
+      image: { url: ytData.thumbnail || "https://i.imgur.com/ruBrlLo.jpeg" },
       caption: caption,
       contextInfo: {
         mentionedJid: [m.sender],
