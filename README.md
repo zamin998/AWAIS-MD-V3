@@ -17,9 +17,9 @@
 <a><img src='https://files.catbox.moe/bw5qrm'/></a>
 
 
-<img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<img src='https://files.catbox.moe/bw5qrm'/></a>
+<a><img src='https://files.catbox.moe/bw5qrm'/></a><a><img src='https://files.catbox.moe/bw5qrm'/></a>
+<a><img src='https://files.catbox.moe/bw5qrm'/></a>
 <h1 align="center"> AWAIS-MD </h1> 
 <p align="center">AWAIS-MD made for people, on Earth </p>
 
