@@ -10,11 +10,11 @@
 ---
 <p align="center">
   <a href="https://github.com/Awais-star-a11y">
-    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+v3.0+MultiDevice;Developed+by+AwaisMd;Give+star+and+forks+this+Repo+🌟" alt="Panhwar110Readme">
+    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+v3.0+MultiDevice;Developed+by+AwaisMd;Give+star+and+forks+this+Repo+🌟" alt="AWAIS110Readme">
   </a>
 </p>
 
-<a><img src='https://qu.ax/QkpAj.jpg'/></a>
+<a><img src='https://files.catbox.moe/bw5qrm'/></a>
 
 
 <img src='https://i.imgur.com/LyHic3i.gif'/></a>
