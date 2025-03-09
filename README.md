@@ -14,7 +14,7 @@
   </a>
 </p>
 
-<a><img src='https://files.catbox.moe/bw5qrm'/></a>
+<a><img src='https://i.imgur.com/XM8Vadf.jpeg'/></a>
 
 
 <img src='https://files.catbox.moe/bw5qrm'/></a>
