@@ -26,7 +26,7 @@ l(e)
 })
 
 cmd({
-    pattern: "ping",
+    pattern: "ping3",
     react: "♻️",
     alias: ["speed"],
     desc: "Check bot\'s ping",
