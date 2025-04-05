@@ -3,7 +3,7 @@ const { cmd, commands } = require('../command');
 
 cmd({
     pattern: "ping",
-    alias: ["speed","ping4"],use: '.ping3',
+    alias: ["speed","ping"],use: '.ping',
     desc: "Check bot's response time.",
     category: "main",
     react: "⚡",
