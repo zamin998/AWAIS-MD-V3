@@ -10,7 +10,7 @@ let baseUrl;
 })();
 
 
-const yourName = "*AWAIS MD🧬*";
+const yourName = "*AWAIS MD*";
 
 //twitter dl (x)
 cmd({
