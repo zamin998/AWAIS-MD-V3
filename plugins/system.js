@@ -21,7 +21,7 @@ let status = `*╭──────────●●►*
 
 *_HOSTNAME:➠_* ${os.hostname()}
 
-*_OWNER:➠_* *Um4r719*
+*_OWNER:➠_* *𓆩𝑨𝑾𝑨𝑰𝑺𝑿𝑫𓆪*
 *╰──────────●●►*
 `
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:`${status}`},{quoted:mek})
