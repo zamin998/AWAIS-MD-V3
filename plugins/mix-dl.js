@@ -3,7 +3,7 @@ const axios = require('axios');
 
 cmd({
   pattern: "fb",
-  alias: ["facebook", "fb2", "fbdl"],
+  alias: ["facebook", "fb3", "fbdl"],
   desc: "Download Facebook videos",
   category: "download",
   filename: __filename
