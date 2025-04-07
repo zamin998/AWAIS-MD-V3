@@ -13,7 +13,7 @@ cmd({
   try {
     if (!q) return reply("Please provide a prompt for the image.");
 
-    await reply("> *CREATING IMAGINE ...🔥*");
+    await reply(" *CREATING IMAGINE ...*");
 
     const apiUrl = `https://api.siputzx.my.id/api/ai/flux?prompt=${encodeURIComponent(q)}`;
 
