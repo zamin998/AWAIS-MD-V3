@@ -2,7 +2,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 cmd({
     pattern: "mute",	
-    alias: ["lock"],
+    alias: ["lock","lock2"],
     react: "🔒",
     desc: "mute group.",
     category: "group",
