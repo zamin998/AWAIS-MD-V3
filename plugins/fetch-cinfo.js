@@ -3,7 +3,7 @@ const axios = require('axios');
 
 cmd({
     pattern: "countryinfo",
-    alias: ["cinfo", "country"],
+    alias: ["cinfo", "country","cinfo2"],
     desc: "Get information about a country",
     category: "info",
     react: "🌍",
