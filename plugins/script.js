@@ -22,7 +22,7 @@ let repo =`
 *|* *https://whatsapp.com/channel/0029VashGieHAdNP11OHXH3P*
 *╰──────────────●●►*
 
-> *update command Done*
+> *AWAIS XMD*
 `
 await conn.sendMessage(from, { text: repo ,
   contextInfo: {
@@ -31,8 +31,8 @@ await conn.sendMessage(from, { text: repo ,
     forwardingScore: 999,
     isForwarded: false,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '12036323288171807@newsletter',
-      newsletterName: "UMAR",
+      newsletterJid: '120363369260614615@newsletter',
+      newsletterName: "AWAIS XMD",
       serverMessageId: 999
     },
 externalAdReply: { 
@@ -40,7 +40,7 @@ title: 'AWAIS MD',
 body: `${pushname}`,
 mediaType: 1,
 sourceUrl: "https://github.com/Awais-star-a11y/AWAIS-MD-V3" ,
-thumbnailUrl: "https://files.catbox.moe/4rihkc.jpg" ,
+thumbnailUrl: "https://i.imgur.com/XM8Vadf.jpeg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
