@@ -7,7 +7,7 @@ const { runtime } = require('../lib/functions');
 
 cmd({
   pattern: 'version',
-  alias: ["changelog", "cupdate", "checkupdate"],
+  alias: ["changelog", "cupdate", "checkupdate","crupdate"],
   react: '🚀',
   desc: "Check bot's version, system stats, and update info.",
   category: 'info',
