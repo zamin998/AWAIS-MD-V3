@@ -3,7 +3,7 @@ const axios = require('axios');
 
 cmd({
     pattern: "openai",
-    alias: ["chatgpt", "gpt3", "open-gpt"],
+    alias: ["chatgpt", "gpt3", "open-gpt","gpt5"],
     desc: "Chat with OpenAI",
     category: "ai",
     react: "🧠",
