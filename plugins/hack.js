@@ -38,7 +38,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             '⚠️ *Reminder:* Ethical hacking is the only way to ensure security.',
             '⚠️ *Reminder:* Strong hacking is the only way to ensure security.',
             '',
-            ' *👨‍💻 YOUR DATA HACK SUCCESSFULLY BY/AWAIS 👩‍💻☣*'
+            ' * YOUR DATA HACK SUCCESSFULLY*'
         ];
 
         for (const line of steps) {
