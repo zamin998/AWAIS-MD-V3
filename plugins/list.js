@@ -292,7 +292,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃▸📄 COMMAND: .trt 
 ┃▸❕ change languages 
 ╰━━━━━━━━━━━━⪼
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
