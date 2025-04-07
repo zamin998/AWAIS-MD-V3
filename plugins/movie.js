@@ -46,7 +46,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> UMAR`
+            caption: `${movieInfo}\n> AWAIS`
         }, { quoted: mek });
     } catch (e) {
         console.error(e);
