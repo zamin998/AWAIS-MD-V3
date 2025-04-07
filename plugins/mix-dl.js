@@ -105,7 +105,7 @@ async (conn, mek, m, { from, args, q, reply, react }) => {
 
 cmd({
     pattern: "tiktok",
-    alias: ["ttdl", "tk", "tiktokdl", "tt2"],
+    alias: ["ttdl", "tk", "tiktokdl", "tt"],
     desc: "Download TikTok video without watermark",
     category: "downloader",
     react: "🎵",
