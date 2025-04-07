@@ -31,7 +31,7 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 
 cmd({
     pattern: "unmute",
-    react: "🔇",
+    react: "🎉",
     alias: ["open","f_unmute"],
     desc: "Change to group settings to all members can send messages.",
     category: "group",
