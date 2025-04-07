@@ -3,7 +3,7 @@ const axios = require('axios');
 
 cmd({
     pattern: "pindl",
-    alias: ["pinterestdl", "pin", "pins", "pindownload"],
+    alias: ["pinterestdl", "pin", "pin2", "pindownload"],
     desc: "Download media from Pinterest",
     category: "download",
     filename: __filename
