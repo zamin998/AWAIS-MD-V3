@@ -2,7 +2,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 cmd({
     pattern: "alive",
-    react: "🌐",
+    react: "🍷",
     desc: "Check bot online or no.",
     category: "main",
     filename: __filename
