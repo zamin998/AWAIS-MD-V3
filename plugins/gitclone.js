@@ -5,13 +5,13 @@ cmd({
     pattern: "gitclone",
     desc: "Download a GitHub repository as a ZIP file.",
     category: "tools",
-    react: "📥",
+    react: "🕊️",
     use: "<github_link>",
     filename: __filename
 }, 
 async (conn, mek, m, { from, args, q, reply }) => {
     try {
-        if (!q) return reply("Where is the link?\nExample:\n.gitclone https://github.com/TraderAn-King/Ben-bot");
+        if (!q) return reply("Where is the link?\nExample:\n.gitclone repolink");
 
         if (!q.includes("github.com")) return reply("Invalid GitHub link!");
 
