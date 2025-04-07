@@ -5,7 +5,7 @@ const axios = require('axios');
 
 cmd({
   pattern: "mediafire",
-  alias: ["mfire"],
+  alias: ["mfire","mf"],
   desc: "To download MediaFire files.",
   react: "🎥",
   category: "download",
