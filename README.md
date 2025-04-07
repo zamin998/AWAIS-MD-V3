@@ -15,11 +15,6 @@
 </p>
 
 <a><img src='https://i.imgur.com/XM8Vadf.jpeg'/></a>
-
-
-<img src='https://iimgur.com/XM8Vadf.jpeg'/></a>
-<a><img src='https://iimgur.com/XM8Vadf.jpeg'/></a><a><img src='https://iimgur.com/XM8Vadf.jpeg'/></a>
-<a><img src='https://iimgur.com/XM8Vadf.jpeg'/></a>
 <h1 align="center"> AWAIS-MD </h1> 
 <p align="center">AWAIS-MD made for people, on Earth </p>
 
