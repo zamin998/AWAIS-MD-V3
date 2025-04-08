@@ -1,8 +1,8 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
 cmd({
-    pattern: "script",
-    alias: ["sc","repo","info"],
+    pattern: "script2",
+    alias: ["sc2","repo2","info2"],
     desc: "bot repo",
     react: "🤖",
     category: "main",
