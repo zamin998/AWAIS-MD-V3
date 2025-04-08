@@ -4,7 +4,7 @@ const axios = require("axios");
 const { cmd, commands } = require('../command');
 
 cmd({
-  pattern: "apk3",
+  pattern: "apk",
   desc: "Download APK from Aptoide.",
   category: "download",
   filename: __filename
