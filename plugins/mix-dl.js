@@ -51,7 +51,7 @@ cmd({
 
 cmd({
     pattern: "insta3",
-    alias: ["igdl3", "reel3", "ig", "instadl3"],
+    alias: ["igdl3", "reel3", "ig2", "instadl3"],
     desc: "Download Instagram reels or image posts",
     category: "downloader",
     react: "⏳",
