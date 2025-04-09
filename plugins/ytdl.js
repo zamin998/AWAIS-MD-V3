@@ -8,8 +8,8 @@ const fs = require('fs');
 //DON'T COPY WITHOUT CREDIT AWAISXD CODES
 
 cmd({
-  'pattern': "play",
-  "alias" : ["play"], 
+  'pattern': "song",
+  "alias" : ["song"], 
   'react': '🎵',
   'desc': "Download MP3 audio from YouTube by searching for song names.",
   'category': "music",
