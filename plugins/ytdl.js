@@ -55,7 +55,7 @@ cmd({
   }
 });
 cmd({
-  'pattern': "video2",
+  'pattern': "video5",
   'react': '🎥',
   'desc': "Download MP4 video from YouTube by searching for video names.",
   'category': 'video',
