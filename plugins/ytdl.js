@@ -8,12 +8,12 @@ const fs = require('fs');
 //DON'T COPY WITHOUT CREDIT AWAISXD CODES
 
 cmd({
-  'pattern': "play6",
-  "alias" : ["song6"], 
+  'pattern': "play",
+  "alias" : ["play"], 
   'react': '🎵',
   'desc': "Download MP3 audio from YouTube by searching for song names.",
   'category': "music",
-  'use': ".play6 <song name>",
+  'use': ".play <song name>",
   'filename': __filename
 }, async (_0xbdeed3, _0x1a1f32, _0x3f48d8, {
   from: _0x1f7d88,
@@ -55,7 +55,7 @@ cmd({
   }
 });
 cmd({
-  'pattern': "video5",
+  'pattern': "video2",
   'react': '🎥',
   'desc': "Download MP4 video from YouTube by searching for video names.",
   'category': 'video',
