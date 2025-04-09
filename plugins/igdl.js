@@ -2,8 +2,8 @@ const { cmd } = require('../command');
 const axios = require('axios');
 
 cmd({
-  pattern: "ig2",
-  alias: ["insta", "Instagram","ig2"],
+  pattern: "ig",
+  alias: ["insta", "Instagram","ig"],
   desc: "To download Instagram videos.",
   react: "🎥",
   category: "download",
