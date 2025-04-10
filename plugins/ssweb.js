@@ -21,7 +21,7 @@ async (conn, mek, m, {
   }
 
   try {
-    const response = await axios.get(`https://api.davidcyriltech.my.id/ssweb?url=${q}`);
+    const response = await axios.get(`https://apis-nothing.xyz/ssweb?url=${q}`);
     const screenshotUrl = response.data.screenshotUrl;
     const imageMessage = {
       image: { url: screenshotUrl },
