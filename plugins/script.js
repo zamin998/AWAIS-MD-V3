@@ -40,7 +40,7 @@ title: 'AWAIS MD',
 body: `${pushname}`,
 mediaType: 1,
 sourceUrl: "https://github.com/Awais-star-a11y/AWAIS-MD-V3" ,
-thumbnailUrl: "https://i.imgur.com/XM8Vadf.jpeg" ,
+thumbnailUrl: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
