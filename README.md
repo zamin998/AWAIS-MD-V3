@@ -14,7 +14,7 @@
   </a>
 </p>
 
-<a><img src='https://i.imgur.com/XM8Vadf.jpeg'/></a>
+<a><img src='https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'/></a>
 <h1 align="center"> AWAIS-MD </h1> 
 <p align="center">AWAIS-MD made for people, on Earth </p>
 
