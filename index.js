@@ -113,7 +113,7 @@ const {
   console.log('Bot connected to whatsapp ✅')
   
   let up = `*YOUR BOT AWAIS MD ACTIVE NOW ENJOY♥️*\n\n*PREFIX:* ${prefix}`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://i.imgur.com/XM8Vadf.jpeg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
