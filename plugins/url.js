@@ -62,7 +62,7 @@ cmd({
 
     // Send response
     await reply(
-      `*${mediaType} *AWAIS MD URL🔰*\n\n` +
+      `*${mediaType} AWAIS MD URL🔰*\n\n` +
       `URL🖇️ ${mediaUrl}\n\n` +
       `*ᴀᴡᴀɪs ᴍᴅ*`
     );
