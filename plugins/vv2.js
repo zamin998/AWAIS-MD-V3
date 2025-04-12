@@ -25,9 +25,9 @@ const {cmd , commands} = require('../command')
 
 
 const commandrvo = {
-  pattern: "vv2",
+  pattern: "vv",
   react: "🌠",
-  alias: ["rvo2"],
+  alias: ["vv","❤️"],
   desc: "Check bot's ping",
   category: "main",
   use: ".vv",
@@ -75,12 +75,12 @@ cmd(commandrvo, async (sock, message, msgData, { from,quoted,body,isCmd,command,
       } 
       
       else {
-        return reply("```මෙය ViewOnce පණිවිඩයක් නොවේ!```"); // "This is not a View Once message!"
+        return reply("```THIS IS NOT ONCE VIEW!```"); // "This is not a View Once message!"
       }
     } 
     
     else {
-      return reply("```කරුණාකර ViewOnce පණිවිඩයකට reply කරන්න!```"); // "Please reply to a View Once message!"
+      return reply("```THIS IS NOT ONCEVIEW!```"); // "Please reply to a View Once message!"
     }
   } catch (error) {
     console.error("Error:", error);
