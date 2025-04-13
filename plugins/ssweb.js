@@ -24,7 +24,7 @@ async (conn, mek, m, {
     const encodedUrl = encodeURIComponent(q);
     const apiKey = "king"; // Replace with your actual API key if needed
 
-    const urlss = (`https://apis-nothing.xyz/api/tools/ssweb?url=${encodedUrl}&apikey=${apiKey}`);
+    const urlss = (`https://apis-nothing.xyz/api/tools/ssweb?url=${encodedUrl}&apikey=${apiKey}=ben-bot${ben-bot}`);
 
     await conn.sendMessage(from, {
       image: { url: urlss },
