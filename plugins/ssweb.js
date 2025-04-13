@@ -1,3 +1,5 @@
+//DON'T COPY WITHOUT CREDIT 
+
 const { cmd } = require('../command');
 const axios = require('axios');
 
@@ -44,3 +46,4 @@ async (conn, mek, m, {
     reply("ERROR FETCHING SCREENSHOT. PLEASE TRY AGAIN LATER.");
   }
 });
+//AWAISXD CODES
