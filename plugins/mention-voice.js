@@ -11,22 +11,14 @@ module.exports = {
 
       const mentions = m.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
       if (!mentions.length) return;
-
-      // Tumhari marzi ke voice URLs — jitne chaho add karo
       const voices = [
         'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg',
         'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg',
         'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'
       ];
-
-      // Random ek select karo
       const randomVoice = voices[Math.floor(Math.random() * voices.length)];
-
-      // Voice ko download karo
       const response = await axios.get(randomVoice, { responseType: 'arraybuffer' });
-      const audioBuffer = response.data;
-
-      // Voice message bhejo
+      const audioBuffer = response.data
       await conn.sendMessage(m.chat, audioBuffer, MessageType.audio, {
         mimetype: Mimetype.mp4Audio,
         ptt: true,
