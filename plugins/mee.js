@@ -1,4 +1,7 @@
-module.exports = {
+const config = require('../config');
+const { cmd } = require('../command');
+
+cmd = {
   name: 'mee',
   command: ['mee', 'Mee'],
   description: 'Mention user and send voice note',
