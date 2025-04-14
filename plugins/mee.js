@@ -39,12 +39,12 @@ cmd({
       forwardingScore: 55555,
       isForwarded: true,
       externalAdReply: {
-        title: "𓆩𝑨𝑾𝑨𝑰𝑺𝑿𝑫𓆪",
-        body: "LOVE IS EASY ,BUT I AM BUSY 💞",
+        title: "✗ ₊⃗ ₉ ₂ ₃ᷟ ₄ͧ ₂ᷦ ₇ᷧ ₇ͫ ₇ͥ ₆ᷞ ₂ ₁⃖ ₀ ✗",
+        body: "𓀂⎋ ᴅᴀᴀʟ🤢کــــؔـــر🙌🏻ᴛᴇʀᴀ💃🏻عشــــؔـــق🪽ꜱʜᴀᴘᴀʀ🚮میــــؔـــں⚠️ʙᴀʜᴏᴛ📡دور🔖ᴘʜᴇɴᴋ🖐🏿آئــــؔـــے🔥ʜᴀɪ ᭄𓀂 ❥⇷𝙓3𝙊𝙣⇸❥",
         mediaType: 4,
-        thumbnailUrl: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg",
+        thumbnailUrl: "https://cdn.ironman.my.id/i/yewsfo.jpg",
         mediaUrl: "https://www.instagram.com/officialbaloch003/profilecard/?igsh=MXY3bnZibWNhMnN5MQ==",
-        sourceUrl: "https://wa.me/qr/3JHKCD2RWYMUP1",
+        sourceUrl: "https://Wa.me/923182832887",
         showAdAttribution: true
       }
     },
