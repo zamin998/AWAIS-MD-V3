@@ -12,9 +12,9 @@ module.exports = {
       const mentions = m.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
       if (!mentions.length) return;
       const voices = [
-        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg',
-        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg',
-        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'
+        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250408-WA0005.mp3',
+        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250408-WA0006.mp3',
+        'https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/VID-20250408-WA0006.mp3'
       ];
       const randomVoice = voices[Math.floor(Math.random() * voices.length)];
       const response = await axios.get(randomVoice, { responseType: 'arraybuffer' });
