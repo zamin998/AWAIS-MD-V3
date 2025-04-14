@@ -18,7 +18,7 @@ cmd({
     // Send the voice message
     await sock.sendMessage(m.chat, {
       audio: { url: voiceUrl },
-      mimetype: 'audio/mp4',
+      mimetype: 'audio/mp3',
       ptt: true,
       mentions: [mentionedUser]
     });
