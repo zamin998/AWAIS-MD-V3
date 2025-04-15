@@ -49,7 +49,6 @@ cmd({
         body: "𓀂⎋ ᴅᴀᴀʟ🤢کــــؔـــر🙌🏻ᴛᴇʀᴀ💃🏻عشــــؔـــق🪽ꜱʜᴀᴘᴀʀ🚮میــــؔـــں⚠️ʙᴀʜᴏᴛ📡دور🔖ᴘʜᴇɴᴋ🖐🏿آئــــؔـــے🔥ʜᴀɪ ᭄𓀂 ❥⇷𝙓3𝙊𝙣⇸❥",
         mediaType: 4,
         thumbnailUrl: "https://cdn.ironman.my.id/i/yewsfo.jpg",
-        mediaUrl: "https://www.instagram.com/officialbaloch003/profilecard/?igsh=MXY3bnZibWNhMnN5MQ==",
         sourceUrl: "https://Wa.me/923182832887",
         showAdAttribution: true
       }
