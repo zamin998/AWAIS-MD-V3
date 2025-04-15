@@ -2,7 +2,7 @@ const config = require('../config')
 const { cmd, commands } = require('../command')
 
 cmd({
-    pattern: "add",
+    pattern: "add2",
     alias: ["come"],
     react: "➕",
     desc: "Adds a user to the group.",
