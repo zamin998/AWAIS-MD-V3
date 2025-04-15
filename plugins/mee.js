@@ -10,6 +10,11 @@ cmd({
 }, async (conn, m, { reply }) => {
   const voiceClips = [
     "https://cdn.ironman.my.id/i/7p5plg.mp4",
+    "https://cdn.ironman.my.id/i/rnptgd.mp4",
+    "https://cdn.ironman.my.id/i/smsl2s.mp4",
+    "https://cdn.ironman.my.id/i/vkvh1d.mp4",
+    "https://cdn.ironman.my.id/i/9xp5lb.mp4",
+    "https://cdn.ironman.my.id/i/jfr6cu.mp4",
     "https://cdn.ironman.my.id/i/l4dyvg.mp4",
     "https://cdn.ironman.my.id/i/4z93dg.mp4",
     "https://cdn.ironman.my.id/i/m9gwk0.mp4",
