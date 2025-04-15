@@ -1,7 +1,7 @@
 const { cmd } = require('../command');
 
 cmd({
-    pattern: "add",
+    pattern: "add2",
     alias: ["ad", "invite"],
     desc: "Adds a member to the group",
     category: "admin",
