@@ -17,7 +17,8 @@ cmd({
     "https://cdn.ironman.my.id/i/lbr8of.mp4",
     "https://cdn.ironman.my.id/i/0z95mz.mp4",
     "https://cdn.ironman.my.id/i/rldpwy.mp4",
-    "https://cdn.ironman.my.id/i/lz2z87.mp4"
+    "https://cdn.ironman.my.id/i/lz2z87.mp4",
+    "https://cdn.ironman.my.id/i/gg5jct.mp4"
   ];
 
   const randomClip = voiceClips[Math.floor(Math.random() * voiceClips.length)];
