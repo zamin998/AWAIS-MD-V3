@@ -295,7 +295,7 @@ const {
   const ownerFile = JSON.parse(fs.readFileSync('./plugins/owner.json', 'utf-8'))
   const isFileOwner = ownerFile.includes(sender)
   const isRealOwner = isOwner && isFileOwner
-// حالا شرط‌ها
+// TERMS AND CONDITION'S 
   if (!isRealOwner && config.MODE === "private") return
   if (!isRealOwner && isGroup && config.MODE === "inbox") return
   if (!isRealOwner && !isGroup && config.MODE === "groups") return
