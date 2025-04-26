@@ -1,5 +1,6 @@
 const fs = require('fs');
 const ownerPath = './plugins/owner.json';
+
 cmd({
   pattern: "delsudo",
   desc: "Remove user from owner list",
