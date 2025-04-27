@@ -13,7 +13,7 @@ try{
         const message = await conn.sendMessage(from, { text: '*pong...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*⚬Lααɾα-ᴍᴅ ꜱᴘᴇᴇᴅ : ${ping}ms*`,
+        await conn.sendMessage(from, { text: `*ᴀᴡᴀɪs ᴍᴅ ꜱᴘᴇᴇᴅ : ${ping}ms*`,
                                       contextInfo: {
                 mentionedJid: ['923182832887@s.whatsapp.net'], // specify mentioned JID(s) if any
                 groupMentions: [],
