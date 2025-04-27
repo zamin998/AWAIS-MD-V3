@@ -2,8 +2,8 @@ const config = require('../config');
 const { cmd, commands } = require('../command');
 
 cmd({
-    pattern: "ping",
-    alias: ["speed","ping"],use: '.ping',
+    pattern: "ping7",
+    alias: ["speed7","ping7"],use: '.ping',
     desc: "Check bot's response time.",
     category: "main",
     react: "⚡",
