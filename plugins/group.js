@@ -108,9 +108,9 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 
 
 cmd({
-    pattern: "leave",
+    pattern: "leave7",
     react: "🔓",
-    alias: ["left","kickme","f_leave","f_left","f-left"],
+    alias: ["left7","kickme7","f_leave7","f_left7","f-left7"],
     desc: "To leave from the group",
     category: "group",
     use: '.leave',
@@ -268,9 +268,9 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 
 
 cmd({
-    pattern: "kick",
+    pattern: "kick5",
     react: "🥏",
-    alias: ["remove"],
+    alias: ["remove5"],
     desc: "To Remove a participant from Group",
     category: "group",
     use: '.kick',
