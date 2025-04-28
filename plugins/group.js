@@ -299,9 +299,9 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 
 
 cmd({
-    pattern: "promote",
+    pattern: "promote3",
     react: "🥏",
-    alias: ["addadmin"],
+    alias: ["addadmin3"],
     desc: "To Add a participatant as a Admin",
     category: "group",
     use: '.promote',
@@ -332,9 +332,9 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 } )
 
 cmd({
-    pattern: "demote",
+    pattern: "demote3",
     react: "🥏",
-    alias: ["removeadmin"],
+    alias: ["removeadmin3"],
     desc: "To Demote Admin to Member",
     category: "group",
     use: '.demote',
