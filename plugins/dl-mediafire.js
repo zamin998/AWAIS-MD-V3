@@ -40,11 +40,11 @@ cmd({
       react: { text: "⬆️", key: m.key }
     });
 
-    const caption = `╭━━━〔 *MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
+    const caption = `╭━━━〔 *AWAIS MD MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
       + `┃▸ *File Name:* ${file_name}\n`
       + `┃▸ *File Type:* ${mime_type}\n`
       + `╰━━━⪼\n\n`
-      + `📥 *Downloading your file...*`;
+      + `✅ *ᴀᴡᴀɪs ᴍᴅ*`;
 
     await conn.sendMessage(from, {
       document: { url: dl_link },
