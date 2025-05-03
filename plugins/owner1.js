@@ -53,7 +53,7 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
 });
 // 4. Block User
 cmd({
-    pattern: "block",
+    pattern: "block3",
     desc: "Block a user.",
     category: "owner",
     react: "🚫",
@@ -72,7 +72,7 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
 });
 // 5. Unblock User
 cmd({
-    pattern: "unblock",
+    pattern: "unblock3",
     desc: "Unblock a user.",
     category: "owner",
     react: "✅",
