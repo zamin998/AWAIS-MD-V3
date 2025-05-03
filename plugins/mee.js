@@ -53,7 +53,7 @@ cmd({
         title: "𓆩𝑨𝑾𝑨𝑰𝑺𝑿𝑫𓆪",
         body: "𝐓𝝰̚𝐠͜͡𝗲 𝝪𝐨̚𝝻͜͡𝐫 𝐋𝝾̚𝝼͜͡𝗲 :🦚🍬⛱️🎗️💖",
         mediaType: 4,
-        thumbnailUrl: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg",
+        thumbnailUrl: "https://files.catbox.moe/jbt3l1.jpg",
         sourceUrl: "https://Wa.me/923182832887",
         showAdAttribution: true
       }
