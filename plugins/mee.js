@@ -19,6 +19,8 @@ cmd({
     "https://cdn.ironman.my.id/i/4z93dg.mp4",
     "https://cdn.ironman.my.id/i/m9gwk0.mp4",
     "https://cdn.ironman.my.id/i/gr1jjc.mp4",
+    "https://files.catbox.moe/tpioly.mp4",
+    "https://files.catbox.moe/xhmbuw.mp4",
     "https://files.catbox.moe/5thp4z.mp4",
     "https://cdn.ironman.my.id/i/lbr8of.mp4",
     "https://cdn.ironman.my.id/i/0z95mz.mp4",
