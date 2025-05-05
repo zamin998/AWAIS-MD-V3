@@ -57,7 +57,7 @@ cmd({
 // MP3 song download 
 
 cmd({ 
-    pattern: "song5", 
+    pattern: "song", 
     alias: ["play5", "mp3"], 
     react: "🎶", 
     desc: "Download YouTube song", 
