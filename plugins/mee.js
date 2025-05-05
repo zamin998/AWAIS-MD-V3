@@ -19,11 +19,6 @@ cmd({
     "https://cdn.ironman.my.id/i/4z93dg.mp4",
     "https://cdn.ironman.my.id/i/m9gwk0.mp4",
     "https://cdn.ironman.my.id/i/gr1jjc.mp4",
-    "https://files.catbox.moe/tpioly.mp4",
-    "https://files.catbox.moe/b301gu.mp4",
-    "https://files.catbox.moe/rf0vd4.mp4",
-    "https://files.catbox.moe/xhmbuw.mp4",
-    "https://files.catbox.moe/5thp4z.mp4",
     "https://cdn.ironman.my.id/i/lbr8of.mp4",
     "https://cdn.ironman.my.id/i/0z95mz.mp4",
     "https://cdn.ironman.my.id/i/rldpwy.mp4",
@@ -53,7 +48,7 @@ cmd({
         title: "𓆩𝑨𝑾𝑨𝑰𝑺𝑿𝑫𓆪",
         body: "𝐓𝝰̚𝐠͜͡𝗲 𝝪𝐨̚𝝻͜͡𝐫 𝐋𝝾̚𝝼͜͡𝗲 :🦚🍬⛱️🎗️💖",
         mediaType: 4,
-        thumbnailUrl: "https://files.catbox.moe/jbt3l1.jpg",
+        thumbnailUrl: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg",
         sourceUrl: "https://Wa.me/923182832887",
         showAdAttribution: true
       }
