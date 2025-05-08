@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=FF033E&center=true&width=1000&height=200&lines=AWAIS-MD-BOT" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=0000FF&center=true&width=1000&height=200&lines=AWAIS-MD-BOT" alt="Typing SVG" /></a>
   </p>
 
 <p align="center">
@@ -37,9 +37,11 @@
 
     
 
-1. *_GET SESSION ID HERE'S✅_* [`PAIR CODE`](https://awais-md-pair.onrender.com)
-2. ***Then `Go to Whatapp > Three dots > Linked Devices`***
-3. *_DEPLOY ON HEROKU✅_* .[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/Awais-star-a11y/AWAIS-MD-V3)
+1. *_GET SESSION ID HERE'S✅_*
+2.  °[`PAIR CODE`](https://awais-md-pair.onrender.com)
+3. ***Then `Go to Whatapp > Three dots > Linked Devices`***
+4. *_DEPLOY ON HEROKU✅_*
+5. °[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/Awais-star-a11y/AWAIS-MD-V3)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
