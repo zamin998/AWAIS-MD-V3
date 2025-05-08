@@ -10,18 +10,18 @@
 ---
 <p align="center">
   <a href="https://github.com/Awais-star-a11y">
-    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+v3.0+MultiDevice;Developed+by+AwaisMd;Give+star+and+forks+this+Repo+🌟" alt="AWAIS110Readme">
+    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+V3.0+MULTIDEVICE; DEVELOPED+BY+AWAISXD; DON'T+STAR+AND+FORKS+THIS+REPO+🌟" alt="AWAIS110Readme">
   </a>
 </p>
 
 <a><img src='https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'/></a>
 <h1 align="center"> AWAIS-MD </h1> 
-<p align="center">AWAIS-MD made for people, on Earth </p>
+<p align="center">AWAIS-MD CREATED BY AWAIS XD</p>
 
  
    
 <p align="center">
- <h2>WhatsApp channel</h2>
+ <h2>WHATSAPP CHAHNAL</h2>
   <a href="https://whatsapp.com/channel/0029VashGieHAdNP11OHXH3P" target="_blank">
     <img alt="whatsapp" src="https://img.shields.io/badge/ Join Whatsapp Channel For Updates-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
  
