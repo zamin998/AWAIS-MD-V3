@@ -1,9 +1,5 @@
-const fs = require("fs");
 const config = require("../config");
 const { cmd, commands } = require("../command");
-const path = require('path');
-const axios = require("axios");
-
 
 cmd({
     pattern: "privacy",
