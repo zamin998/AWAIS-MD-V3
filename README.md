@@ -2,7 +2,7 @@
   </p>
 
 <p align="center">
-  <h1 align="center">AWAIS-MD 3.0</h1>
+  <h1 align="center">AWAIS-MD 3.0🌀</h1>
 </p>
 
 > **`Updated` The Version 3.0**
@@ -23,23 +23,23 @@
 <p align="center">
  <h2>WHATSAPP CHAHNAL</h2>
   <a href="https://whatsapp.com/channel/0029VashGieHAdNP11OHXH3P" target="_blank">
-    <img alt="whatsapp" src="https://img.shields.io/badge/ Join Whatsapp Channel For Updates-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+    <img alt="whatsapp" src="https://img.shields.io/badge/ JOIN WHATSAPP CHANNEL FOR UPDATES-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
  
 
 
 
 <p align="center"> AWAIS-MD uses
-  <a href="https://github.com/WhiskeySockets/Baileys)**">Multi-Device Baileys.</a>
+  <a href="https://github.com/WhiskeySockets/Baileys)**">MULTI-DEVICE BAILEYS.</a>
 </p>
 <p align="center">
-  <img title="Whatsapp-Bot-Javascript" src="https://img.shields.io/badge/Javascript-363303?style=for-the-badge&logo=javascript&logoColor=c6c631"></img>
+  <img title="WHATSAPP-BOT-JAVASCRIPT" src="https://img.shields.io/badge/Javascript-363303?style=for-the-badge&logo=javascript&logoColor=c6c631"></img>
 </p>
 
     
 
-1. Link your WhatsApp by [`PAIR CODE`](https://awais-md-pair.onrender.com)
+1. *_GET SESSION ID HERE'S✅_* [`PAIR CODE`](https://awais-md-pair.onrender.com)
 2. ***Then `Go to Whatapp > Three dots > Linked Devices`***
-3. Deploy On Heruku .[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/Awais-star-a11y/AWAIS-MD-V3)
+3. *_DEPLOY ON HEROKU✅_* .[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/Awais-star-a11y/AWAIS-MD-V3)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
