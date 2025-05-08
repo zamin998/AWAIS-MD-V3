@@ -3,13 +3,14 @@ const { cmd } = require('../command');
 
 cmd({
   pattern: 'mee',
-  alias: ['Mee'],
+  alias: ['Mee','Awais'],
   desc: 'Mention user and send voice note',
   category: 'fun',
   react: '🎙️'
 }, async (conn, m, { reply }) => {
   const voiceClips = [
     "https://cdn.ironman.my.id/i/7p5plg.mp4",
+    "https://files.catbox.moe/j27hyg",
     "https://cdn.ironman.my.id/i/rnptgd.mp4",
     "https://cdn.ironman.my.id/i/smsl2s.mp4",
     "https://cdn.ironman.my.id/i/vkvh1d.mp4",
