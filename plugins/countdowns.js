@@ -12,18 +12,18 @@ cmd({
 },
 async (conn, m, message, { args, reply, isCreator, isOwner }) => {
     try {
-        if (!isCreator) return reply("_*☣️ THIS COMMAND CAN ONLY BE USED BY MY OWNER !*_");
+        if (!isCreator) return reply("_*☣️ THIS COMMAND ONLY FOR MOII OWNER!*_");
 
         let seconds = parseInt(args[0]);
         if (isNaN(seconds) || seconds <= 0) {
             return reply("❌ PLEASE PROVIDE A VALID NUMBER OF SECONDS.");
         }
 
-        reply(`☣️ COUNTDOWN STARTED FOR ${seconds} SECONDS...`);
+        reply(`_*☣️ COUNTDOWN STARTED FOR ${seconds} SECONDS...*_`);
 
         const timer = setInterval(() => {
             seconds--;
-            reply(`⏱️ Time left: ${seconds} seconds`);
+            reply(`_*☣️ TIME LEFT: ${seconds} SECONDS*_`);
             if (seconds === 0) {
                 clearInterval(timer);
                 reply("✅ _*COUNTDOWN FINISHED*_ ☣️");
