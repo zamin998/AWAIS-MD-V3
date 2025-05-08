@@ -30,7 +30,7 @@ cmd({
     // Update the prefix in memory
     config.PREFIX = newPrefix;
 
-    return reply(`✅ Prefix successfully changed to *${newPrefix}*`);
+    return reply(`✅ _PREFIX SUCCESSFULLY CHANGED TO_ *${newPrefix}*`);
 });
 
 cmd({
@@ -55,7 +55,7 @@ cmd({
         return reply("✅ Bot mode is now set to *PRIVATE*.");
     } else if (modeArg === "public") {
         config.MODE = "public";
-        return reply("✅ Bot mode is now set to *PUBLIC*.");
+        return reply("✅ _BOT MODE IS NOW SET TO_ *PUBLIC*.");
     } else {
         return reply("❌ Invalid mode. Please use `.mode private` or `.mode public`.");
     }
@@ -63,6 +63,7 @@ cmd({
 
 cmd({
     pattern: "auto-typing",
+    alias: ["autotyping"],
     description: "Enable or disable auto-typing feature.",
     category: "settings",
     filename: __filename
@@ -72,11 +73,11 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
 
     const status = args[0]?.toLowerCase();
     if (!["on", "off"].includes(status)) {
-        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ:  .ᴀᴜᴛᴏ-ᴛʏᴘɪɴɢ ᴏɴ*");
+        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ:  .ᴀᴜᴛᴏᴛʏᴘɪɴɢ ᴏɴ*");
     }
 
     config.AUTO_TYPING = status === "on" ? "true" : "false";
-    return reply(`Auto typing has been turned ${status}.`);
+    return reply(`_AUTO TYPING HAS BEEN TURNED_ ${status}.`);
 });
 //--------------------------------------------
 // ALWAYS_ONLINE COMMANDS
@@ -98,7 +99,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
 
     config.ALWAYS_ONLINE = status === "on" ? "true" : "false";
     await conn.sendPresenceUpdate(status === "on" ? "available" : "unavailable", from);
-    return reply(`Bot is now ${status === "on" ? "online" : "offline"}.`);
+    return reply(`_BOT IS NOW_ ${status === "on" ? "online" : "offline"}.`);
 });
 //--------------------------------------------
 //  AUTO_RECORDING COMMANDS
@@ -121,10 +122,10 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
     config.AUTO_RECORDING = status === "on" ? "true" : "false";
     if (status === "on") {
         await conn.sendPresenceUpdate("recording", from);
-        return reply("Auto recording is now enabled. Bot is recording...");
+        return reply("AUTO RECORDING IS NOW ENABLED. BOT IS RECORDING...");
     } else {
         await conn.sendPresenceUpdate("available", from);
-        return reply("Auto recording has been disabled.");
+        return reply("_AUTO RECORDING HAS BEEN DISABLED_.");
     }
 });
 //--------------------------------------------
@@ -344,10 +345,10 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
     // Check the argument for enabling or disabling the anticall feature
     if (args[0] === "on") {
         config.AUTO_REACT = "true";
-        await reply("*autoreact feature is now enabled.*");
+        await reply("*_AUTOREACT FEATURE IS NOW ENABLED_.*");
     } else if (args[0] === "off") {
         config.AUTO_REACT = "false";
-        await reply("autoreact feature is now disabled.");
+        await reply("_AUTOREACT FEATURE IS NOW DISABLED_.");
     } else {
         await reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: .ᴀᴜᴛᴏ-ʀᴇᴀᴄᴛ ᴏɴ*`);
     }
@@ -369,10 +370,10 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
     // Check the argument for enabling or disabling the anticall feature
     if (args[0] === "on") {
         config.AUTO_STATUS_REPLY = "true";
-        return reply("status-reply feature is now enabled.");
+        return reply("_STATUS-REPLY FEATURE IS NOW ENABLED_.");
     } else if (args[0] === "off") {
         config.AUTO_STATUS_REPLY = "false";
-        return reply("status-reply feature is now disabled.");
+        return reply("_STATUS-REPLY FEATURE IS NOW DISABLED.");
     } else {
         return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  .sᴛᴀᴛᴜs-ʀᴇᴘʟʏ ᴏɴ*`);
     }
