@@ -4,6 +4,7 @@ const config = require('../config');
 
 cmd({
     pattern: "countdown",
+    alias: ['count','start'],
     desc: "Start a countdown timer (Owner only)",
     category: "tools",
     react: "⏱️",
