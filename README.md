@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=0000FF&center=true&width=1000&height=200&lines=AWAIS-MD-BOT" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=#ADD8E6&center=true&width=1000&height=200&lines=AWAIS-MD-BOT" alt="Typing SVG" /></a>
   </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 ---
 <p align="center">
   <a href="https://github.com/Awais-star-a11y">
-    <img src="http://readme-typing-svg.herokuapp.com?color=0000FF&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+V3.0+MULTIDEVICE; DEVELOPED+BY+AWAISXD; DON'T+STAR+AND+FORKS+THIS+REPO+🌟" alt="AWAIS110Readme">
+    <img src="http://readme-typing-svg.herokuapp.com?color=#ADD8E6&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+V3.0+MULTIDEVICE; DEVELOPED+BY+AWAISXD; DON'T+STAR+AND+FORKS+THIS+REPO+🌟" alt="AWAIS110Readme">
   </a>
 </p>
 
