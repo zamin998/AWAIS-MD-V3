@@ -10,7 +10,7 @@
 ---
 <p align="center">
   <a href="https://github.com/Awais-star-a11y">
-    <img src="http://readme-typing-svg.herokuapp.com?color=FF0000&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+V3.0+MULTIDEVICE; DEVELOPED+BY+AWAISXD; DON'T+STAR+AND+FORKS+THIS+REPO+🌟" alt="AWAIS110Readme">
+    <img src="http://readme-typing-svg.herokuapp.com?color=0000FF&center=true&vCenter=true&multiline=false&lines=AWAIS-MD-+V3.0+MULTIDEVICE; DEVELOPED+BY+AWAISXD; DON'T+STAR+AND+FORKS+THIS+REPO+🌟" alt="AWAIS110Readme">
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 
 
 
-<p align="center"> AWAIS-MD uses
+<p align="center"> AWAIS-MD USES
   <a href="https://github.com/WhiskeySockets/Baileys)**">MULTI-DEVICE BAILEYS.</a>
 </p>
 <p align="center">
