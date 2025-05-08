@@ -1,5 +1,4 @@
 const { cmd ,commands } = require('../command');
-const { exec } = require('child_process');
 const config = require('../config');
 const {sleep} = require('../lib/functions')
 // 1. Shutdown Bot
