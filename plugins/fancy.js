@@ -3,7 +3,7 @@ const { cmd } = require("../command");
 
 cmd({
   pattern: "fancy",
-  alias: ["font", "style"],
+  alias: ["font", "style","logo"],
   react: "🌚",
   desc: "Convert text into various fonts.",
   category: "tools",
