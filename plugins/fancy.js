@@ -22,7 +22,7 @@ cmd({
     }
 
     const fonts = response.data.result.map(item => `*${item.name}:*\n${item.result}`).join("\n\n");
-    const resultText = `✨ *Fancy Fonts Converter* ✨\n\n${fonts}\n\n> *Powered by AWAIS MD*`;
+    const resultText = `✨ *Fancy Fonts Converter* ✨\n\n${fonts}\n\n> *POWDERED BY AWAIS MD*`;
 
     await conn.sendMessage(from, { text: resultText }, { quoted: m });
   } catch (error) {
