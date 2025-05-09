@@ -52,7 +52,7 @@ cmd({
 
     if (modeArg === "private") {
         config.MODE = "private";
-        return reply("✅ Bot mode is now set to *PRIVATE*.");
+        return reply("✅ _BOT MODE IS NOW SET TO_ *PRIVATE*.");
     } else if (modeArg === "public") {
         config.MODE = "public";
         return reply("✅ _BOT MODE IS NOW SET TO_ *PUBLIC*.");
