@@ -36,7 +36,7 @@ async (conn, mek, m, {
     try {
         // Check if args[0] exists (user provided text)
         if (!args[0]) {
-            return reply("Please provide text after the command.\nExample: .aivoice hello");
+            return reply("Please provide text after the command.\nExample: .vai hello");
         }
 
         // Get the full input text
@@ -64,16 +64,16 @@ async (conn, mek, m, {
         ];
 
         // Create menu text
-        let menuText = "╭━━━〔 *DARK-SILENCE-MD AI VOICE MODELS* 〕━━━⊷\n";
+        let menuText = "╭━━━〔 *AWAIS-MD VOICE MODELS* 〕━━━⊷\n";
         voiceModels.forEach(model => {
             menuText += `┃▸ ${model.number}. ${model.name}\n`;
         });
         menuText += "╰━━━⪼\n\n";
-        menuText += `📌 *Reply with the number to select voice model for:*\n\n"${inputText}"\n\n©POWERD BY SILENTLOVER432💌`;
+        menuText += `📌 *Reply with the number to select voice model for:*\n\n"${inputText}"\n\n*ᴀᴡᴀɪs ᴍᴅ*`;
 
         // Send menu message with image
         const sentMsg = await conn.sendMessage(from, {  
-            image: { url: "https://files.catbox.moe/jm5q8q" },
+            image: { url: "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg" },
             caption: menuText
         }, { quoted: m });
 
