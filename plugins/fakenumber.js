@@ -3,7 +3,7 @@ const axios = require("axios");
 
 cmd({
     pattern: "tempnum",
-    alias: ["fakenum", "tempnumber"],
+    alias: ["fakenum", "tempnumber","fake"],
     desc: "Get temporary numbers & OTP instructions",
     category: "tools",
     react: "📱",
