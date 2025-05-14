@@ -49,7 +49,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg` },
+                image: {url: config.ALIVE_IMG},
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
