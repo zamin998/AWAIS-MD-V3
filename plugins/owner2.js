@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "owner",
+    pattern: "owner2",
     react: "✅", 
     desc: "Get owner number",
     category: "main",
@@ -29,13 +29,13 @@ async (conn, mek, m, { from }) => {
 
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            image: { url: '' }, // Image URL from your request
+            image: { url: config.ALIVE_IMG}, // Image URL from your request
             caption: `╭━━〔 *AWAIS-MD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *HERE'S OWNER*
 ┃◈┃• *NAME* - ${ownerName}
 ┃◈┃• *NUMBER* ${ownerNumber}
-┃◈┃• *VERSION*: 2.0.0 Beta
+┃◈┃• *VERSION*: V3
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 *ᴀᴡᴀɪs ᴍᴅ*`, // Display the owner's details
