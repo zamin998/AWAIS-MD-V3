@@ -46,24 +46,26 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ╰──────────────┈⊷
 > ${config.CAPTION}`;
 
-        await conn.sendMessage(
-            from,
-            {
-                image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg` },
-                caption: dec,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363369260614615@newsletter',
-                        newsletterName: 'AWAIS MD',
-                        serverMessageId: 143
+        await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu,
+                       contextInfo: {
+        mentionedJid: [m.sender],
+        forwardingScore: 999,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363369260614615@newsletter',
+          newsletterName: 'AWAIS-MD',
+          serverMessageId: 143
                     }
                 }
             },
             { quoted: mek }
         );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
 
         // Send audio
         await conn.sendMessage(from, {
