@@ -1,7 +1,9 @@
-const config = require('../config'); 
-const { cmd } = require('../command'); 
-const { getBuffer } = require('../lib/functions'); 
-const Jimp = require('jimp'); 
+const fs = require("fs");
+const config = require("../config");
+const { cmd, commands } = require("../command");
+const path = require('path');
+const axios = require("axios");
+const Jimp = require('jimp');
 
 cmd({ 
   pattern: "setpp", 
