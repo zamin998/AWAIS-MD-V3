@@ -58,7 +58,7 @@
 
 ----
 
-> <a href="http://wa.me/+9231196076038?text=HI AWAISXD+I NEED+YOUR+HELP😒_"><img src="https://img.shields.io/badge/CONTACT-AWAIS XD-4D009DE2?style=for-the-badge&logo=whatsapp&logoColor=4D009DE2" /><br>
+> <a href="http://wa.me/+923196076038?text=HI+AWAISXD+I+NEED+YOUR+HELP😒_"><img src="https://img.shields.io/badge/CONTACT-AWAIS XD-4D009DE2?style=for-the-badge&logo=whatsapp&logoColor=4D009DE2" /><br>
 
 ----
 
@@ -80,7 +80,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/404"><img src="https://img.shields.io/badge/Github-FFF?style=for-the-badge&logo=Github&logoColor=000000&link=https://github.com/awais-star-a11y" /></a>
+  <a href="https://github.com/awais-star-a11y"><img src="https://img.shields.io/badge/Github-FFF?style=for-the-badge&logo=Github&logoColor=000000&link=https://github.com/awais-star-a11y" /></a>
 </p>
 
 </details>
