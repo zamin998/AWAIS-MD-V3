@@ -43,6 +43,48 @@
 4. *_DEPLOY ON HEROKU✅_*
 5. °[`HEROKU`](https://dashboard.heroku.com/new-app?template=https://github.com/Awais-star-a11y/AWAIS-MD-V3)
 
+
+>👨🏻‍💻 Ƈᴜʀʀᴇɴᴛ Ƨᴛᴀᴛᴜs :
+ƛᴅᴅIɴɢ Ɗᴀᴛᴀʙᴀsᴇ ƛɴᴅ ƑIɴᴀʟIᴢIɴɢ Ʋsᴇʀ Ɓᴏᴛ Ɓᴀsᴇ.
+■■■■■■■■■■100% Complete 🌸 
+
+
+
+
+
+
+
+## Connect With Me
+
+----
+
+> <a href="http://wa.me/+9231196076038?text=HI AWAISXD+I NEED+YOUR+HELP😒_"><img src="https://img.shields.io/badge/CONTACT-AWAIS XD-4D009DE2?style=for-the-badge&logo=whatsapp&logoColor=4D009DE2" /><br>
+
+----
+
+> <a href="https://github.com/awais-star-a11y"><img src="https://img.shields.io/badge/AWAIS-GITHUB-FF0190CF?style=for-the-badge&logo=github&logoColor=FF0190CF" /><br>
+
+
+  </div>
+
+
+
+
+<details>
+   
+  
+  
+  <summary>「🧧」 <b>Ƒᴏʟʟᴏᴡ Mᴇ Ơɴ</b></summary><br/>
+<p align="center">
+  <a href="https://wa.me/923196076038"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/404"><img src="https://img.shields.io/badge/Github-FFF?style=for-the-badge&logo=Github&logoColor=000000&link=https://github.com/awais-star-a11y" /></a>
+</p>
+
+</details>
+
 <h2 align="left">ℹ️ NOTICE</h2>
 <p style="text-align: center; font-size: 1.2em;">
  NOT FOR SALE - IF ANY PLUGIN'S CODE IS OBFUSCATED, YOU DO NOT HAVE PERMISSION TO EDIT IT IN ANY FORM. PLEASE REMEMBER TO GIVE CREDIT IF YOU ARE USING OR RE-UPLOADING MY PLUGINS/FILES. WISHING YOU A WONDERFUL DAY AHEAD!</p>
