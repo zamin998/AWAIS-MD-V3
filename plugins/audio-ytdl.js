@@ -20,7 +20,7 @@ function convertYouTubeLink(q) {
 
 cmd({
     pattern: "song2",
-    alias: "play2",
+    alias: "play",
     desc: "To download songs.",
     react: "🎵",
     category: "download",
@@ -90,7 +90,7 @@ const sentMsg = await conn.sendMessage(from, {
 });
 
 cmd({
-    pattern: "play",
+    pattern: "play3",
     alias: "play3",
     desc: "To download songs.",
     react: "🎵",
