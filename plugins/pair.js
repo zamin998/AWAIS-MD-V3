@@ -25,7 +25,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
 
         // Fetch pairing code
         //const fetch = require("node-fetch");
-        const response = await fetch(`https://awais-md-pair.onrender.com/code?number=${q}`);
+        const response = await fetch(`https://pair-site-kx6l.onrender.com/code?number=${q}`);
         const pair = await response.json();
 
         // Check for errors in response
