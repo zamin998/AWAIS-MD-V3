@@ -49,7 +49,7 @@ cmd({
 });
 
 cmd({
-  'pattern': 'ig',
+  'pattern': 'ig4',
   'alias': ["insta"],
   'desc': "To download instagram videos.",
   'react': '🎥',
