@@ -14,7 +14,7 @@
   </a>
 </p>
 
-<a><img src='https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg'/></a>
+<a><img src='https://files.catbox.moe/kgjmyn.jpg'/></a>
 <h1 align="center"> AWAIS-MD </h1> 
 <p align="center">AWAIS-MD CREATED BY AWAIS XD</p>
 
