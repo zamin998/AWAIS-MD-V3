@@ -1,7 +1,19 @@
 FROM node:lts-buster
-RUN git clone https://github.com/Awais-star-a11y/AWAIS-MD-v3 /root/xIKRATOSx
-WORKDIR /root/xIKRATOSx
-RUN npm install && npm install -g pm2 || yarn install --network-concurrency 1
-COPY . .
-EXPOSE 9090
+
+# Clone the bot repo
+RUN git clone https://github.com/Awais-star-a11y/AWAIS-MD-v3 /app
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies
+RUN npm install
+
+# Optional: install pm2 if your start script uses it
+# RUN npm install -g pm2
+
+# Expose port (Heroku will ignore this but good practice)
+EXPOSE 8080
+
+# Start the bot
 CMD ["npm", "start"]
