@@ -1,7 +1,7 @@
 const {cmd , commands} = require('../command')
 
 cmd({
-    pattern: "ping",
+    pattern: "pong2",
     desc: "Check bot online or no.",
     category: "main",
     react: "🚀",
