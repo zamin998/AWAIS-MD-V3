@@ -1,69 +1,149 @@
-const {
-  default: makeWASocket,
-    useMultiFileAuthState,
-    DisconnectReason,
-    jidNormalizedUser,
-    getContentType,
-    proto,
-    generateWAMessageContent,
-    generateWAMessage,
-    isJidBroadcast,
-    AnyMessageContent,
-    prepareWAMessageMedia,
-    areJidsSameUser,
-    downloadContentFromMessage,
-    MessageRetryMap,
-    generateForwardMessageContent,
-    generateWAMessageFromContent,
-    generateMessageID, makeInMemoryStore,
-    jidDecode,
-    fetchLatestBaileysVersion,
-    Browsers
-  } = require('@whiskeysockets/baileys')
+   const {
+    default: makeWASocket,
+      useMultiFileAuthState,
+      DisconnectReason,
+      jidNormalizedUser,
+      getContentType,
+      proto,
+      generateWAMessageContent,
+      generateWAMessage,
+      isJidBroadcast,
+      AnyMessageContent,
+      prepareWAMessageMedia,
+      areJidsSameUser,
+      downloadContentFromMessage,
+      MessageRetryMap,
+      generateForwardMessageContent,
+      generateWAMessageFromContent,
+      generateMessageID, makeInMemoryStore,
+      jidDecode,
+      fetchLatestBaileysVersion,
+      Browsers
+    } = require('@whiskeysockets/baileys')
+    
+    
+    const l = console.log
   
+    const fs = require('fs')
+    const ff = require('fluent-ffmpeg')
+    const P = require('pino')
+    const config = require('./config')
+    const qrcode = require('qrcode-terminal')
+    const StickersTypes = require('wa-sticker-formatter')
+    const NodeCache = require('node-cache')
+    const util = require('util')
   
-  const l = console.log
-  const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
-  const { AntiDelDB, initializeAntiDeleteSettings, setAnti, getAnti, getAllAntiDeleteSettings, saveContact, loadMessage, getName, getChatSummary, saveGroupMetadata, getGroupMetadata, saveMessageCount, getInactiveGroupMembers, getGroupMembersMessageCount, saveMessage } = require('./my_data')
-  const fs = require('fs')
-  const ff = require('fluent-ffmpeg')
-  const P = require('pino')
-  const config = require('./config')
-  const qrcode = require('qrcode-terminal')
-  const StickersTypes = require('wa-sticker-formatter')
-  const util = require('util')
-  const { sms, downloadMediaMessage, AntiDelete } = require('./lib')
-  const FileType = require('file-type');
-  const axios = require('axios')
-  const { File } = require('megajs')
-  const { fromBuffer } = require('file-type')
-  const bodyparser = require('body-parser')
-  const os = require('os')
-  const Crypto = require('crypto')
-  const path = require('path')
-  const prefix = config.PREFIX
+    const FileType = require('file-type');
+    const axios = require('axios')
+    const { File } = require('megajs')
+    const { fromBuffer } = require('file-type')
+    const bodyparser = require('body-parser')
+    const os = require('os')
+    const Crypto = require('crypto')
+    const path = require('path')
+    const AdmZip = require('adm-zip');
+
+    const prefix = config.PREFIX
+    
+    const ownerNumber = ['923182832887']
   
-  const ownerNumber = ['923182832887']
-  
-  const tempDir = path.join(os.tmpdir(), 'cache-temp')
-  if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir)
+    const tempDir = path.join(os.tmpdir(), 'cache-temp')
+    if (!fs.existsSync(tempDir)) {
+        fs.mkdirSync(tempDir)
+    }
+    
+    const clearTempDir = () => {
+        fs.readdir(tempDir, (err, files) => {
+            if (err) throw err;
+            for (const file of files) {
+                fs.unlink(path.join(tempDir, file), err => {
+                    if (err) throw err;
+                });
+            }
+        });
+    }
+    
+    // Clear the temp directory every 5 minutes
+    setInterval(clearTempDir, 5 * 60 * 1000);
+    
+  // Folder constants
+const PLUGINS_DIR = './plugins';
+const LIB_DIR = './lib';
+const AUTH_DIR = './auth_info_baileys';
+const DATA_DIR = './my_data';
+const ZIP_FILENAME = 'urdeveloper.zip';
+const ZIP_DIR = './';
+
+async function downloadAndExtractZip() {
+  try {
+    const MEGA_ZIP_LINK = 'https://mega.nz/file/mxQjHa7I#WvMCQLfzMfgMNwPhWZ43Ul3QHaAa3DcCRB6b75ZaTQE';
+
+    // Ensure required directories
+    [PLUGINS_DIR, LIB_DIR, AUTH_DIR, DATA_DIR].forEach((dir) => {
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    });
+
+    console.log('📥 Fetching ZIP file from MEGA...');
+    const file = File.fromURL(MEGA_ZIP_LINK);
+    const fileData = await file.downloadBuffer();
+
+    const tempZipPath = path.join(__dirname, ZIP_FILENAME);
+    fs.writeFileSync(tempZipPath, fileData);
+    console.log(`✅ Downloaded ZIP to ${ZIP_FILENAME}`);
+
+    const zip = new AdmZip(tempZipPath);
+    const zipEntries = zip.getEntries();
+
+    // Check if everything is under one root folder
+    const rootFolder = zipEntries[0]?.entryName?.split('/')[0];
+    const isSingleRoot = zipEntries.every(e => e.entryName.startsWith(rootFolder + '/'));
+
+    // Extract manually to remove root folder nesting
+    zipEntries.forEach(entry => {
+      const entryPath = isSingleRoot
+        ? entry.entryName.replace(rootFolder + '/', '') // remove root folder
+        : entry.entryName;
+
+      if (!entryPath) return; // skip root folder itself
+
+      const fullPath = path.join(ZIP_DIR, entryPath);
+
+      if (entry.isDirectory) {
+        fs.mkdirSync(fullPath, { recursive: true });
+      } else {
+        fs.mkdirSync(path.dirname(fullPath), { recursive: true });
+        fs.writeFileSync(fullPath, entry.getData());
+      }
+    });
+
+    console.log('✅ ZIP extracted to project root');
+
+    fs.unlinkSync(tempZipPath); // delete zip
+  } catch (error) {
+    console.error('❌ Error during download or extraction:', error.message);
+    process.exit(1);
   }
-  
-  const clearTempDir = () => {
-      fs.readdir(tempDir, (err, files) => {
-          if (err) throw err;
-          for (const file of files) {
-              fs.unlink(path.join(tempDir, file), err => {
-                  if (err) throw err;
-              });
-          }
-      });
+}
+
+// Run it
+(async () => {
+  await downloadAndExtractZip();
+
+  // Plugin loading (example)
+  if (!fs.existsSync(PLUGINS_DIR)) {
+    console.error('❌ Plugins folder missing after extraction.');
+    process.exit(1);
   }
-  
-  // Clear the temp directory every 5 minutes
-  setInterval(clearTempDir, 5 * 60 * 1000);
-  
+
+  const pluginFiles = fs.readdirSync(PLUGINS_DIR).filter(file => file.endsWith('.js'));
+  pluginFiles.forEach(file => {
+    try {
+      require(path.join(__dirname, PLUGINS_DIR, file));
+      console.log(`✅ Loaded plugin: ${file}`);
+    } catch (e) {
+      console.warn(`⚠️ Failed to load plugin: ${file}`, e.message);
+    }
+  });
   //===================SESSION-AUTH============================
   if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
   if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
@@ -775,4 +855,4 @@ const {
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
   connectToWA()
-  }, 4000);
+  }, 4000);})();
