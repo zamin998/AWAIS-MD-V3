@@ -13,7 +13,7 @@ const ZIP_DIR = './';
 async function downloadAndExtractZip() {
   try {
 
-  const MEGA_ZIP_LINK = `https://mega.nz/file/mxQjHa7I#WvMCQLfzMfgMNwPhWZ43Ul3QHaAa3DcCRB6b75ZaTQE`;
+  const MEGA_ZIP_LINK = `https://mega.nz/file/j4AHxS4Y#ubGb19IYC_P55zO7bij6kzaiisZ0X5vioNnKdjP17sk`;
   
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
