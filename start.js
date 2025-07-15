@@ -16,14 +16,11 @@ async function downloadAndExtractZip() {
 
   const MEGA_ZIP_LINK = `https://mega.nz/file/mxQjHa7I#WvMCQLfzMfgMNwPhWZ43Ul3QHaAa3DcCRB6b75ZaTQE`;
   
-    if (!fs.existsSync(mydt)) {
-      fs.mkdirSync(mydt, { recursive: true });
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
     }
-    if (!fs.existsSync(auid)) {
-      fs.mkdirSync(auid, { recursive: true });
-    }
-    if (!fs.existsSync(silsb)) {
-      fs.mkdirSync(silsb, { recursive: true });
+    if (!fs.existsSync(AUTH_DIR)) {
+      fs.mkdirSync(AUTH_DIR, { recursive: true });
     }
     if (!fs.existsSync(PLUGINS_DIR)) {
       fs.mkdirSync(PLUGINS_DIR, { recursive: true });
